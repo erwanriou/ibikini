@@ -15,12 +15,17 @@ a {
   text-decoration: none;
 }
 
+.fa {
+  font-size: 1rem;
+}
+
 /* HEADER - All the styling about the 2 menu of this ibikini test frontpage*/
 header {
   position: sticky;
   background-color: white;
   border-bottom: 1px solid #eaeaea;
   top: 0;
+  z-index: 99;
 }
 
 #top-menu, #main-menu {
@@ -38,7 +43,7 @@ header {
   height: 1rem;
 }
 
-#top-menu .card {
+#top-menu .card, #main-menu .research {
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
@@ -64,8 +69,59 @@ header {
   justify-content: flex-start;
 }
 
+#main-menu .shop li a {
+  padding-right: 2rem;
+  text-transform: uppercase;
+  color: black;
+}
+
+#main-menu .research {
+  border: 1px solid #eaeaea;
+  border-radius: 0.3rem;
+  padding: 0.5rem;
+}
+
+#main-menu .research li a {
+  padding-left: 2rem;
+  text-transform: uppercase;
+  color: black;
+}
+
+#main-menu .research li input {
+  border: none;
+  text-transform: uppercase;
+  color: black;
+}
+
 /* BANNER - The banner will include a script carousel and some feature about filter of the product of the front page */
 
+.banner {
+  position: relative;
+  overflow: hidden;
+}
+
+.background-image1, .background-image2, .background-image3, .background-image4 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 40rem;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.background-image1 {
+  background-image: url("../images/banner-background1.jpg");
+}
+.background-image2 {
+  background-image: url("../images/banner-background2.jpg");
+}
+.background-image3 {
+  background-image: url("../images/banner-background3.jpg");
+}
+.background-image4 {
+  background-image: url("../images/banner-background4.jpg");
+}
 
 
 /* CONTENT */
