@@ -1,7 +1,71 @@
-/* ALL */
+/* ALL - Here are the main css information that will be applies at the whole template of this test site*/
+body {
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  margin: 0 auto;
+}
+
+.container {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* HEADER - All the styling about the 2 menu of this ibikini test frontpage*/
+header {
+  position: sticky;
+  background-color: white;
+  border-bottom: 1px solid #eaeaea;
+  top: 0;
+}
+
+#top-menu, #main-menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#top-menu {
+  height: 2rem;
+}
+
+#top-menu .company img{
+  height: 1rem;
+}
+
+#top-menu .card {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+#top-menu .card li a{
+  padding-left: 2rem;
+  text-transform: uppercase;
+  color: #999;
+}
 
 
-/* HEADER */
+
+
+
+#main-menu {
+  height: 4rem;
+}
+
+#main-menu .shop {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+/* BANNER - The banner will include a script carousel and some feature about filter of the product of the front page */
+
 
 
 /* CONTENT */
