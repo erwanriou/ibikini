@@ -21,11 +21,14 @@ a {
 
 /* HEADER - All the styling about the 2 menu of this ibikini test frontpage*/
 header {
-  position: sticky;
   background-color: white;
   border-bottom: 1px solid #eaeaea;
   top: 0;
   z-index: 99;
+}
+
+.header1 {
+  position: sticky;
 }
 
 #top-menu, #main-menu {
@@ -163,10 +166,10 @@ header {
   z-index: 20;
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-between;
   border: 1px solid white;
   padding: 1rem;
-  background-color: rgba(255, 255, 255, 0.39);
+  background-color: rgba(47, 47, 47, 0.39);
 }
 
 .product-filter {
@@ -290,7 +293,117 @@ header {
   transition: all 0.4s ease;
   cursor: pointer;
 }
-/* FOOTER */
+/* FOOTER we will style here the both footer that is a double functionality regardind seo optimization and regrouping the contact and info */
+footer {
+  margin-top: 5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  background-color: #f1f1f1;
+}
 
+footer h2 {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #424242;
+  text-transform: uppercase;
+}
 
+footer h3 {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #424242;
+  text-transform: uppercase;
+  padding-bottom: 1rem;
+}
+
+footer p {
+  color: grey;
+  line-height: 1rem;
+  font-size: 0.8rem;
+}
+
+footer button {
+  background-color:#404040;
+  border: 1px solid #eae8e8;
+  padding: 0.5rem;
+  text-transform: uppercase;
+  color: white;
+}
+
+footer button:hover {
+  background-color:#f16060;
+}
+.footer-bottom, .footer-top {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.newsletter, .local-shop, .help {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 33.33%;
+  margin-left: -1px;
+  height: 10rem;
+  border: 1px solid #e4e4e4;
+  padding: 1rem;
+}
+
+.newsinput {
+  display: flex;
+  justify-content: space-between;
+  background-color: white;
+  border: 1px solid #eae8e8;
+  padding: 0.5rem;
+}
+
+.newsinput input {
+  border: none;
+  width: 15rem;
+  color: grey;
+}
+
+.footer-menus, .footer-about {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  margin-top: -1px;
+  margin-left: -1px;
+  flex-wrap: wrap;
+  height: 10rem;
+  border: 1px solid #e4e4e4;
+  padding: 1rem;
+}
+
+.footer-menus {
+  width: 60%
+}
+.footer-about {
+  width: 40%
+}
+.lists {
+  margin-right: 4rem;
+}
+
+.lists a {
+  color: grey;
+  line-height: 1.4rem;
+  font-size: 0.8rem;
+  transition: all 0.3s ease;
+}
+
+.lists a:hover {
+  color: red;
+}
+
+.footer-logo {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 3rem;
+  font-size: 0.8rem;
+}
 /* MEDIA */
